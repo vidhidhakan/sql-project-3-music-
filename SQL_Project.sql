@@ -2,7 +2,7 @@ use world;
 show tables;
 
 show databases;
-
+use
 create table cities(
     city_name VARCHAR(25),
     latitude DECIMAL(10,6),
