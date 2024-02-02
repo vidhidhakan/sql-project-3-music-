@@ -8,6 +8,8 @@ mkdir -> Make Directory mkdir git_repo ; git_repo is folder name
 #git commands
 git init -> Initialize
 git clone https://github.com/vidhidhakan/sql_coding_01.git
+git remote add <name> <url>
+
 git status -> to check the unsaved / untracked files
 cd sql_coding_01
 git add .
