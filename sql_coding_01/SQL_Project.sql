@@ -173,15 +173,48 @@ WHERE co.region = 'Asia'
 List all of the countries in the region of Asia that did NOT have a city with an inserted date from June 2021 through Sept 2021.
 
 Q7----------------------------------------------------
+use world
+select * from cities
+select * from countries
 
-select upper(co.country_name),(length(ci.city_name), 'RN')AS ROMANNUMERAL , FORMAT(ci.population,0) 
-from countries Co 
-join cities ci 
-on co.country_code_2 = ci.cities_code_2
-where co.sub_region = 'Western Asia'and ci.city_name = REVERSE(ci.city_name)
-order by (length(ci.city_name), 'RN') desc, ci.city_name asc;
-
-DONT KNOW THIS QSTN doubt
+WITH palindromic_cities AS(
+  SELECT
+    co.country_name,
+    c.city_name,
+    c.population,
+    LENGTH(c.city_name) AS city_name_length
+  FROM
+    cities AS c
+    JOIN countries AS co ON c.country_code_2 = co.country_code_2
+  WHERE
+    co.sub_region = 'Western Asia'
+    AND c.city_name = REVERSE(c.city_name)
+),
+city_name_with_roman_length AS (
+  SELECT
+    country_name,
+    city_name,
+    population,
+    city_name_length,
+    CASE
+      WHEN city_name_length = 1 THEN 'I'
+      WHEN city_name_length = 2 THEN 'II'
+      WHEN city_name_length = 3 THEN 'III'
+      -- Add more cases as needed
+      ELSE 'N/A'
+    END AS roman_numeral_length
+  FROM
+    palindromic_cities
+)
+SELECT
+  country_name,
+  city_name,
+  FORMAT(population, 0) AS formatted_population,
+  roman_numeral_length
+FROM
+  city_name_with_roman_length
+ORDER BY
+  city_name_length DESC, city_name ASC;
 
 Q8----------------------------------------------
 
@@ -199,22 +232,30 @@ order by population_type asc, co.country_name asc;
 /*so here whenever there is even number to find than use population % 2 =0 */
 
 Q9-------------------------------------
+select * from cities
+select * from countries
 
-with rankcities as (
- select
- co.region,
- ci.city_name,
- ci.population
- DENSE_RANK() OVER (PARTITION BY co.region ORDER BY ci.population DESC) AS RNK
-FROM COUNTRIES AS co
-JOIN cities as ci 
-ON co.country_code_2 = ci.country_code_2
-group by co.region, ci.city_name, ci.population)
-select co.region, ci.city_name, ci.population
-from rankcities
-where rnk = 3;
+WITH ranked_cities AS (
+  SELECT
+    co.sub_region,
+    c.city_name,
+    c.population,
+    ROW_NUMBER() OVER (PARTITION BY co.sub_region ORDER BY c.population DESC) AS city_rank
+  FROM
+    cities c
+    JOIN countries co  ON c.country_code_2 = co.country_code_2
+)
+SELECT
+  sub_region,
+  city_name,
+  population
+FROM
+  ranked_cities
+WHERE
+  city_rank = 3
+ORDER BY
+  sub_region;
 
-DOUBT
 ----------------------------------------------------------------
 Q 10
 
