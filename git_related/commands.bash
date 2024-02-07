@@ -14,3 +14,4 @@ git status -> to check the unsaved / untracked files
 cd sql_coding_01
 git add .
 git commit -am "changes saved for sqls"  -> Saves
+git push - to forward this file in repo
