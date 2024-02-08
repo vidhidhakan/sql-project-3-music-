@@ -357,7 +357,7 @@ and year is null;
  20. Which artists did release an album during the decades of the 1980's and the 1990's? 
 
 
-select distinct ar.name
+ select distinct ar.name
 from artist as ar 
 left join album as al
 on ar.id = al.artist_id
