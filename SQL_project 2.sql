@@ -1,4 +1,4 @@
-CREATE DATABASE music;
+ CREATE DATABASE music;
 use music;
 
 -- Record Label table
