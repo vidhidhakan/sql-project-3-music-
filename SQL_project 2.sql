@@ -261,7 +261,7 @@ select al.year, count(*) as "number of albums recorded"
 from Album as al 
 group by al.year;
 
-12.What is the max number of recorded albums across all the years?
+ 12.What is the max number of recorded albums across all the years?
 
  select MAX(count) as "max number of recorded albums"
  from
