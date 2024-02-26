@@ -299,7 +299,7 @@ on co.country_code_2 = l.country_code_2
 where co.sub_region = 'northern africa'
 group by co.country_name, ci.city_name, ci.population;
 
-Q 12
+Q 12 questn
 
 
 
