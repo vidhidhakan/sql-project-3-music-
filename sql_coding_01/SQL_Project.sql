@@ -21,7 +21,7 @@ FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
-show create table  cities
+show create table  cities....
 
 CREATE TABLE countries (
     country_name VARCHAR(255),
