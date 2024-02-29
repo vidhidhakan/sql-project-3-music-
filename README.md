@@ -66,4 +66,6 @@ Database exercises
 
 19. Which artists did not release an album during the decades of the 1980's and the 1990's?  
 
-20. Which artists did release an album during the decades of the 1980's and the 1990's?  
+20. Which artists did release an album during the decades of the 1980's and the 1990's?
+
+    ------------
