@@ -7,7 +7,7 @@ CREATE TABLE record_label (
   name varchar(50) not null,
   PRIMARY KEY (id),
   UNIQUE KEY uk_name_in_record_label (name)
-);
+);;
 
 -- Record Label data
 INSERT INTO record_label VALUES(1,'Blackened');
