@@ -1,3 +1,4 @@
+
  usual day to day  commands
 ls -> List the direc/files present in the path
 clear -> clears the screen output
