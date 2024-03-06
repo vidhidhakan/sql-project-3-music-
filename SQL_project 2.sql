@@ -200,7 +200,7 @@ select * from artist
 select * from album
 select * from Song
 doubt
-
+-----------------------------------------------------------------------------------------------------------------------------------
 6. How many artists have recorded the least number of songs?
 doubt
 
