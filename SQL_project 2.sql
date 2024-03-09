@@ -354,7 +354,7 @@ on ar.id = al.artist_id
 where year >= 1980 or year >=1990
 and year is null;
 
- 20. Which artists did release an album during the decades of the 1980's and the 1990's? 
+  20. Which artists did release an album during the decades of the 1980's and the 1990's? 
 
 
   select distinct ar.name
