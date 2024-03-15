@@ -159,7 +159,7 @@ ORDER BY right(country_name,1), citycount;
 select * from countries
 select * from cities
 /* so when i want to use last letter than i will use right(country_name ,1) and when i want first letter than left(country_name,1)*/
-Q6-----------------------------------------------
+ Q6-----------------------------------------------
 
 SELECT co.country_name 
 FROM countries AS co 
