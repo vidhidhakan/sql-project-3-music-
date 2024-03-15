@@ -1,4 +1,4 @@
-use world-------
+ use world-------
 show tables;
 
 show databases;
