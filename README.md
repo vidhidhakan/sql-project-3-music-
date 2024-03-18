@@ -8,7 +8,7 @@ vidhi dhakan ==== 6feb 2024
 
 install mysql
 
-A SQL editing environment such as: SQuirreL SQL Client or IntelliJ IDE or the MySQL Workbench
+ A SQL editing environment such as: SQuirreL SQL Client or IntelliJ IDE or the MySQL Workbench
 
 Usage Notes
 
