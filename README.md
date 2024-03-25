@@ -68,4 +68,4 @@ Database exercises
 
 20. Which artists did release an album during the decades of the 1980's and the 1990's?
 
-    ------------
+    ------------------------------------------ the end ---------------------------------
