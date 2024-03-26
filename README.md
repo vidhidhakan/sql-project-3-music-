@@ -12,7 +12,7 @@ install mysql
 
 Usage Notes
 
-fire-up your mysql server if it is not already running: mysqld
+fire-up your mysql server if it is not already running: mysql
 
 fire-up your editing environment
 
