@@ -8,7 +8,7 @@ CREATE TABLE record_label (
   PRIMARY KEY (id),
   UNIQUE KEY uk_name_in_record_label (name)
 );
-
+-------------------------------------------------------------------------
 -- Record Label data
 INSERT INTO record_label VALUES(1,'Blackened');
 INSERT INTO record_label VALUES(2,'Warner Bros');
