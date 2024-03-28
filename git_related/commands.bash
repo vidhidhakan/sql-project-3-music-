@@ -1,4 +1,4 @@
-    --  usual day to day  commands
+       --  usual day to day  commands
 ls -> List the direc/files present in the path
 clear -> clears the screen output
 pwd ->present working directory - to see current location
@@ -16,5 +16,4 @@ git add .
 git commit -am "changes saved for sqls"  -> Saves
 git push - to forward this file in repo
 
-  
 
