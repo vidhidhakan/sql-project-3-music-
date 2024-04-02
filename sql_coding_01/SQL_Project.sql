@@ -300,7 +300,7 @@ where co.sub_region = 'northern africa'
 group by co.country_name, ci.city_name, ci.population;
 
 Q 12 questn
-
+--------------------------------------------------------
 
 
 
