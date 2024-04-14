@@ -4,7 +4,6 @@ clear -> clears the screen output
 pwd ->present working directory - to see current location
 cd <location-> change the directory  e.g. cd d:/
 mkdir -> Make Directory mkdir git_repo ;-- git_repo is folder name
---------------------------------------------------------------------------------------------
 
   #git commands
 git init -> Initialize
