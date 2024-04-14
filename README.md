@@ -5,7 +5,7 @@ This example SQL project was created to practice writing SQL queries for a job i
 -------------------------------------------------------------------------------------------------------------
 vidhi dhakan ==== 6feb 2024
 
- Prerequisites
+Pre requsites
 
 install mysql
 
