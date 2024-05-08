@@ -18,5 +18,4 @@ git commit -am "changes saved for sqls"  -> Saves
 git push - to forward this file in repo
 
 
-
------------------------------- THE END --------------------------------------------------
+------------------------the end------------------------------------
