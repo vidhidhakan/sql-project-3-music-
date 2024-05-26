@@ -12,6 +12,7 @@ git clone https://github.com/vidhidhakan/sql_coding_01.git
 git remote add main <url>
 
 git status -> to check the unsaved / untracked files
+
 cd sql_coding_01
 git add .
 git commit -am "changes saved for sqls"  -> Saves
