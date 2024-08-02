@@ -100,7 +100,7 @@ CHANGE COLUMN id country_id INT;
 SELECT * FROM languages;
 
 
------------ one to one reltnship
+----------- one to one reltnship---------------------------------------------
 
 ALTER TABLE currencies
 ADD FOREIGN KEY (country_id) REFERENCES countries(country_id);
