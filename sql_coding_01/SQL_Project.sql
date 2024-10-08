@@ -1,4 +1,5 @@
- use world    -------
+PROJECT
+use world    -------
 show tables;
 
 show databases;
